@@ -44,11 +44,10 @@ html{
     border:  #54d7c1 solid 10px;
 }
   
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .container{
         width: 100%;
-        padding: 2rem;
-        gap: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -119,11 +118,10 @@ a{
 }
   
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .card {
       width: 100%;
       padding: 1rem;
-      gap: 3rem;
       text-align: center;
     }
     .card img {
