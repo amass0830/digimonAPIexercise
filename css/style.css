@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap');
+
+:root{
+    --primary-color:#70cbf9;
+    --text-color: #e2e1e2;
+    --secondary-color:#be97f7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202529;
+    font-family: Mulish, sans-serif;
+    color:#e2e1e2;
+}
+
+html{
+    font-size: 1.2rem;
+    font-family: Mulish, sans-serif;
+}
+
+/* Layouts */
+
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5rem;
+	background: #457f83;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+    border: #54d7c1 solid 10px;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        padding: 2rem;
+        gap: 2rem;
+    }
+}
+
+.group-1{
+    display: grid;
+    grid-column: 1fr 1fr;
+
+
+}
+
+.storyTelling{
+    align-self: center;
+    text-align: justify;
+    margin: 0% auto;
+
+}
+
+/* Common Styles  */
+
+a{
+    text-decoration: none;
+    color:#9a8ab6;
+}
+
+.title{ 
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pretitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+
+.description{ 
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Bootstrap */
+
+.carousel{
+    position: inherit;
+    align-items: center;
+    width: auto ;
+    margin-top: 300px;
+}
+
+.card{
+    color: var(--primary-color);
+    background-color: #15191b;
+    align-items: center;;
+    border:5px solid#be97f7;
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 3rem;
+    }
+}
+
+.botonesspace {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pickedDigimon {
+    margin-top: 20px;
+  }
+  
+.digimon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.digimon img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+  
+.digimon h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+  
+.digimon p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+  
+  
+  
+  
+  
+  
+
+
+  
