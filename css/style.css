@@ -104,13 +104,13 @@ a{
 
 .card {
     color: var(--primary-color);
-    background-color:#103a4a ;
+    background-color: #122833;
     justify-content: center;
-    width: 100%;
+    width: 80vw;
+    max-width: 100%; 
     border: 5px solid #be97f7;
-    max-width: 600px;
-    padding: 2rem;
 }
+  
 
 .card:hover{
     background-color:#122833;
