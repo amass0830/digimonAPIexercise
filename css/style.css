@@ -26,18 +26,24 @@ html{
 /* Layouts */
 
 .container {
-	max-width: 1000px;
-	width: 90%;
-	margin: 0 auto;
-	display: grid;
-	padding: 5rem;
-	background: #457f83;
-	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
-    border: #54d7c1 solid 10px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background:   #54d7c1;
+    gap: 4rem;
+    border: #457f83 solid 10px;
     margin-top: 100px;
 }
 
+.container:hover{
+    background-color:#457f83;
+    border:  #54d7c1 solid 10px;
+}
+  
 @media only screen and (max-width: 768px) {
     .container{
         width: 100%;
@@ -46,18 +52,11 @@ html{
     }
 }
 
-.group-1{
-    display: grid;
-    grid-column: 1fr 1fr;
-
-
-}
 
 .storyTelling{
     align-self: center;
     text-align: justify;
     margin: 0% auto;
-
 }
 
 /* Common Styles  */
@@ -87,7 +86,6 @@ a{
     font-weight: 400;
 }
 
-
 .description{ 
     margin-top: 1rem;
     font-size: 1rem;
@@ -105,21 +103,35 @@ a{
     margin-top: 300px;
 }
 
-.card{
+.card {
     color: var(--primary-color);
-    background-color: #15191b;
-    align-items: center;;
-    border:5px solid#be97f7;
+    background-color:#103a4a ;
+    justify-content: center;
+    width: 100%;
+    border: 5px solid #be97f7;
+    max-width: 600px;
+    padding: 2rem;
 }
 
+.card:hover{
+    background-color:#122833;
+    border: #be97f7 solid 10px;
+}
+  
+
 @media only screen and (max-width: 768px) {
-    .card{
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 1rem;
-        gap: 3rem;
+    .card {
+      width: 100%;
+      padding: 1rem;
+      gap: 3rem;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
     }
 }
+  
 
 .botonesspace {
     gap: 2rem;
@@ -129,8 +141,8 @@ a{
 
 .pickedDigimon {
     margin-top: 20px;
-  }
-  
+}
+
 .digimon {
     display: flex;
     flex-direction: column;
@@ -138,30 +150,21 @@ a{
     align-items: center;
     margin-top: 20px;
 }
-  
+
 .digimon img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
-  
+
 .digimon h3 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
 }
-  
+
 .digimon p {
     font-size: 16px;
     margin-top: 5px;
 }
-  
-  
-  
-  
-  
-  
-
-
-  
